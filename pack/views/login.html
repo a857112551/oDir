@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>登录</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/layui/css/layui.css" media="all">
+    <script type="text/javascript" src="../static/js/public.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/layui/layui.js"></script>
+    <script type="text/javascript" src="../static/js/login.js"></script>
+    <style>
+        .logincard {
+            width: 300px;
+            margin-top: 100px;
+        }
+
+        input {
+            margin-top: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 100px;
+        }
+
+        .icon {
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            width: 38px;
+            line-height: 36px;
+            text-align: center;
+            color: #d2d2d2
+        }
+
+        .layui-form-item {
+            position: relative
+        }
+
+        .layui-input {
+            padding-left: 38px
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        .layui-card-header{
+            height: 80px;
+        }
+        .layui-anim-rotate {
+            -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+        }
+    </style>
+</head>
+<body class="layui-layout-body layui-bg-gray center">
+<div class="layui-card layui-inline logincard">
+    <div class="layui-card-header">
+        <img class="layui-circle layui-anim layui-anim-rotate" src="../static/img/userpic.jpg">
+    </div>
+    <div class="layui-card-body">
+        <div class="layui-form">
+            <div class="layui-form-item">
+                <label class="icon layui-icon layui-icon-user"></label>
+                <input type="text" name="username" id="username" lay-verify="required" placeholder="用户名"
+                       class="layui-input">
+            </div>
+            <div class="layui-form-item">
+                <label class="icon layui-icon layui-icon-password"></label>
+                <input type="password" name="password" id="password" lay-verify="required" placeholder="密码"
+                       class="layui-input">
+            </div>
+            <div class="layui-form-item center">
+                <button class="layui-btn" onclick="login()">登 录</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+</body>
+</html>
