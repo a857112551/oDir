@@ -1,1 +1,0 @@
-我是这么做的，下载5129 （压缩包版本），下载OCQuirks 都解压，用里面的OpenRuntime.efi 和 OcQuirks.efi 替换 /EFI/Clover/Drivers 文件夹中的 AptioMemoryFix.efi 以及 所有版本的 OsxAptioFixDrv.efi（或者OsxAptioFix2Drv.efi  OsxAptioFix3Drv.efi OsxAptioFix2Drv-free2000.efi ）。，用解压后的5129中的 的BOOTX64.efi和 CLOVERX64.efi 替换你的老版本，把其他的efi和kext 文件 都更新到最新（用fakesmc的最好换用virtualsmc），最后用新版ccc打开你的老config，勾选quirks里的选项（参照5129自带config里的选项）然后保存config。
